@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Projeto 01</title>
+	<meta name="author" content="Francisco Manoel Carvalho">
+	<meta name="description" content="FirstApp">
+	<meta name="keywords" content="FirstApp, mobile, desenvolvimento web, web, android, ios, ui, ux, ui/ux">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div>
+		<header>
+			<a class="wow" href="index.html"><img src="img/logo.png" alt="Hotel Paraiso"></a>
+			<nav>
+				<li><a href="index.html" class="scroll">Home</a></li>
+				<li><a href="#hotel" class="scroll">Reservas</a></li>
+				<li><a href="#sobre" class="scroll">Sobre</a></li>
+				<li><a href="#news" class="scroll">Contatos</a></li>
+			</nav>
+		</header>
+		<section class="hero">
+			<h1 class="wow bounce">Conheça esse paraíso chamado Itacaré</h1>
+			<h3 class="wow bounce" data-wow-delay="0.1s">Aconchego, conforto, simpatia e alto astral</h3>
+			<a href="" class="btn wow zoomIn" data-wow-duration="0.5s">Saiba Mais</a>
+		</section>
+	
+		<section class="hotel" id="sobre">
+			<h3 class="wow slideInDown">Conheça o Hotel Paraíso</h3>
+			<p class="wow slideInDown">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sint fuga corrupti atque ut veritatis ipsa odio, officiis dignissimos suscipit nostrum, maxime pariatur natus doloribus expedita? Ut tempora laudantium, ullam!
+			</p>
+			<hr/>
+			<ul class="grid">
+				<li class="small wow lightSpeedIn" data-wow-delay="0.5s" style="background-image:url('./img/itacare-01.jpg');"></li>
+				<li class="large wow flipInY" data-wow-delay="0.5s" style="background-image:url('./img/itacare-02.jpg');"></li>
+				<li class="large wow flipInY" data-wow-delay="0.5s" style="background-image:url('./img/itacare-03.jpg');"></li>
+				<li class="small wow lightSpeedIn" data-wow-delay="0.5s" style="background-image:url('./img/itacare-04.jpg');"></li>
+			</ul>
+		</section>
+
+		<section class="caracteristicas" id="hotel">
+			<h3 class="wow slideInDown">Único Hotel pé na areia de Itacaré</h3>
+			<p class="wow slideInDown">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quis temporibus, et! Consequuntur blanditiis eligendi nulla id quo nihil ipsam, omnis reprehenderit vero iusto fuga. Fugiat, voluptatem quisquam quas velit.
+			</p>
+			<hr>
+			<ul class="grid">
+				<li class="wow slideInLeft" data-wow-delay="0.5s">
+					<i class="fa fa-location-arrow"></i>
+					<h4>Localização</h4>
+					<p class="wow fadeIn" data-wow-delay="0.3s">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.	
+					</p>
+				</li>
+
+				<li class="wow slideInUp">
+					<i class="fa fa-gift"></i>
+					<h4>Pacotes e Ofertas</h4>
+					<p class="wow fadeIn" data-wow-delay="0.3s">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.	
+					</p>
+				</li>
+
+				<li class="wow slideInRight" data-wow-delay="0.5s">
+					<i class="fa fa-home"></i>
+					<h4>Acomodações</h4>
+					<p class="wow fadeIn" data-wow-delay="0.3s">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.	
+					</p>
+				</li>
+			</ul>
+		</section>
+		
+		<section class="news" id="news">
+			<h3 class="wow slideInDown">Newsletter</h3>
+			<p class="wow slideInDown">
+			Assine nossa newsletter	
+			</p>			
+			<hr>
+			<form>
+				<input class="wow slideInLeft" type="email" nome="email" placeholder="email">
+				<button class="wow slideInRight">Cadasdro</button>
+			</form>
+		</section>
+
+		<footer>
+			<ul>
+				<li><a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="http://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="http://youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
+			</ul>
+			<p>Todos os direitos reservados - Hotel Paraíso 2018</p>
+		</footer>
+
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/pace.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript">
+
+		new WOW().init();
+
+		jQuery(document).ready(function($) { 
+		    $(".scroll").click(function(event){        
+		        event.preventDefault();
+		        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
+		   });
+		});
+	</script>
+</body>	
+</html>
